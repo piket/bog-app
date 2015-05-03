@@ -12,20 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
-
-$(function() {
-    console.log("loaded");
-
-    // $('.del-btn').click(function(e) {
-
-    //     var result = confirm("Are you sure you want to "+$(this).attr('title'));
-    //     console.log(result)
-    //     if(!result) {
-    //         console.log("stopping");
-    //         e.preventDefault();
-    //     }
-    // });
-
-});

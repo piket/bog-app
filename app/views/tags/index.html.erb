@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h1 class="text-center">Tags</h1>
+
+    <div class="tag-cloud">
+        <% @tags.each do |tag| %>
+            <%= link_to tag.name, tag, :class => "btn btn-default btn-sm btn-tag", type: "button", style: "font-size:"+(tag.cats.length*10+80).to_s+"%" %>
+        <% end %>
+    </div>
+
+</div>

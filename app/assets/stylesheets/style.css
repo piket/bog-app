@@ -1,0 +1,63 @@
+.cat-list {
+    position: relative;
+}
+
+.edit-btn {
+    position: absolute;
+    right: 55px;
+    top: 5px;
+}
+
+.show-btn {
+    position: absolute;
+    right: 110px;
+    top: 5px;
+}
+
+.del-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.tag-btn {
+    /*pointer-events: none;*/
+}
+
+.img-carousel {
+    max-width: 100%;
+}
+
+.tag-cloud {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.has-error>input {
+    color: #a94442;
+}
+
+.tags-field {
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    border-radius: 4px;
+    line-height: 22px;
+    cursor: text;
+    background-color: #fff;
+    margin-bottom: 10px;
+    max-width: 100%;
+    vertical-align: middle;
+    color: #555;
+}
+
+.bootstrap-tagsinput>input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}

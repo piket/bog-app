@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h1 class="text-center"><%= @tag.name %></h1>
+
+    <div class="list-group col-md-4 col-md-offset-4">
+        <% @tag.cats.each do |c| %>
+            <%= link_to c.name, c, :class => "list-group-item" %>
+        <% end %>
+    </div>
+
+</div>

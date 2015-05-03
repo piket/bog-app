@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <%= bootstrap_form_for @cat, label_errors: true do |f| %>
+            <%= f.text_field :name, :placeholder => "Enter your cat's name", wrapper: {:class => "has-default"}, help: "Please enter a name" %>
+            <%= f.text_field :breed, :placeholder => "Enter your cat's breed", wrapper: {:class => "has-default"}, help: "Please enter a breed" %>
+            <%= f.text_area :description, wrapper: {:class => "has-default"} %>
+            <%= f.select :tags, @cat_tags, {}, multiple: true, "data-role" => "tagsinput", wrapper: {:class => "form-control tags-field"}, hide_label: true, :class => "tags-field-input" %>
+            <%# f.collection_check_boxes :tag_ids, @tags, :id, :name %>
+            <%= f.primary %> <input type="reset" class="btn btn-warning">
+        <% end %>
+    </div>
+</div>

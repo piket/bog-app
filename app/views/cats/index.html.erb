@@ -7,11 +7,15 @@
         <ul class="list-group">
             <% @cats.each do |c| %>
                 <li class="list-group-item cat-list"><%= c.name %>
-                <a type="button" href="/cats/<%= c.id %>" class="btn btn-success btn-sm show-btn" title="View <%= c.name %>"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-                <a type="button" href="/cats/<%= c.id %>/edit" class="btn btn-sm btn-primary edit-btn" title="Edit <%= c.name %>"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
-
-                    <a type="button" href="/cats/<%= c.id %>" rel="nofollow" data-confirm="Are you sure you want to delete <%= c.name %>?" data-method="delete" class="btn btn-sm btn-danger del-btn" title="Delete <%= c.name %>"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
-
+                <%= link_to c, :class => "btn btn-success btn-sm show-btn", :title => "View "+c.name, :type => "button" do %>
+                    <i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i>
+                <% end %>
+                <%= link_to [:edit, c], :class => "btn btn-sm btn-primary edit-btn", :title => "Edit "+c.name, :type => "button" do %>
+                    <i class="glyphicon glyphicon-edit" aria-hidden="true"></i>
+                <% end %>
+                <%= link_to c, method: :delete, :confirm => "Are you sure you want to delete "+c.name+"?", :class => "btn btn-sm btn-danger del-btn", :title => "Delete "+c.name, :type => "button" do %>
+                    <i class="glyphicon glyphicon-remove-circle" aria-hidden="true"></i>
+                <% end %>
                 </li>
             <% end %>
         </ul>

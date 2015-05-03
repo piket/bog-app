@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BogApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>CatApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="//code.jquery.com/jquery.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
+  <link rel="icon" type="image/ico" href="assets/favicon.ico">
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -28,6 +29,7 @@
         <ul class="nav navbar-nav">
             <li><%= link_to "See the Cats!", cats_path %></li>
             <li><%= link_to "Add a Cat!", new_cat_path %></li>
+            <li><%= link_to "Tag Cloud", tags_path %></li>
         </ul><!--
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">

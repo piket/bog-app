@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root 'main#index'
 
   resources :cats
+  resources :tags, only: [:index, :show]
+  # get '/cats/tag/:tag' => 'cats#tag'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

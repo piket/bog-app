@@ -13,25 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.cat-list {
-    position: relative;
-}
-
-.edit-btn {
-    position: absolute;
-    right: 55px;
-    top: 5px;
-}
-
-.show-btn {
-    position: absolute;
-    right: 110px;
-    top: 5px;
-}
-
-.del-btn {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-}
